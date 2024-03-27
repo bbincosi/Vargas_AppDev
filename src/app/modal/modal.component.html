@@ -4,7 +4,7 @@
       <ion-toolbar>
         <ion-label>
           <ion-text color="tertiary">
-            <h2 class="ion-text-center">Have a question?</h2>
+            <h2 class="ion-text-center">Profile</h2>
           </ion-text>
         </ion-label>
         <ion-buttons slot="end">
@@ -20,18 +20,32 @@
         required></ion-input>
     </ion-item>
     <ion-item lines="none">
-      <ion-input class="" type="email" label="Email" labelPlacement="stacked" placeholder="Enter your email"
+      <ion-input class="" type="number" label="Age" labelPlacement="stacked" placeholder="Enter your Age"
+        required></ion-input>
+    <ion-item lines="none">
+      <ion-input class="" type="text" label="Status" labelPlacement="stacked" placeholder="Enter your Status"
+        required></ion-input>    
+    </ion-item>
+    <ion-item lines="none">
+      <ion-input class="" type="Email" label="Email" labelPlacement="stacked" placeholder="Enter your Email"
         required></ion-input>
     </ion-item>
     <ion-item lines="none">
-      <ion-input class="" type="text" label="Subject" labelPlacement="stacked" placeholder="Enter your name"
+      <ion-input class="" type="number" label="Contact" labelPlacement="stacked" placeholder="Enter your Contact"
         required></ion-input>
     </ion-item>
     <ion-item lines="none">
-      <ion-textarea class="" label="Message" labelPlacement="stacked" placeholder="Enter your message"></ion-textarea>
+    <ion-input class="" type="text" label="Address" labelPlacement="stacked" placeholder="Enter your Address"
+      required></ion-input>
     </ion-item>
-    <div class="btn-container">
-      <ion-button color="success" (click)="sendMessage()">Send Message</ion-button>
+    <ion-item lines="none">
+    <ion-input class="" type="text" label="Hobbies" labelPlacement="stacked" placeholder="Enter your Hobbies"
+      required></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+ 
+      <ion-button color="success" (click)="Enter()"> Save </ion-button>
+      <ion-button color="danger" (click)="Enter()"> Back </ion-button>
     </div>
   </div>
 

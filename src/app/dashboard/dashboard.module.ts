@@ -9,7 +9,6 @@ import { DashboardPageRoutingModule } from './dashboard-routing.module';
 import { DashboardPage } from './dashboard.page';
 import { ModalComponent } from '../modal/modal.component';
 import { NotificationComponent } from '../notification/notification.component';
-import { SlidersComponent } from '../sliders/sliders.component';
 
 @NgModule({
   imports: [
@@ -18,6 +17,6 @@ import { SlidersComponent } from '../sliders/sliders.component';
     IonicModule,
     DashboardPageRoutingModule
   ],
-  declarations: [DashboardPage, ModalComponent, NotificationComponent, SlidersComponent]
+  declarations: [DashboardPage, ModalComponent, NotificationComponent]
 })
 export class DashboardPageModule {}

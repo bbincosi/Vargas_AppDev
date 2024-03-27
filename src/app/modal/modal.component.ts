@@ -21,14 +21,13 @@ export class ModalComponent implements OnInit {
     this.closeModal();
   }
 
-  // Will show if message button is clicked
   async showAlert() {
     const alert = await this.alertController.create(
       {
-        header: 'Send Message',
+        header: ' ',
         subHeader: 'Status',
-        message: 'Message successfully sent!',
-        buttons: ['OK']
+        message: 'Save Successfully!',
+        buttons: ['Continue']
       }
     );
     alert.present();
